@@ -1,0 +1,133 @@
+##########################################################################
+# TARGET DEFINITION KEY
+##########################################################################
+
+# Key to define the targets in a project.
+
+# In the ms_key each measurement set is mapped to a target. This key
+# defined targets according to their phase center, systemic velocity
+# and velocity width. These are used in processing the u-v data and
+# then imaging the data.
+
+# The syntax for the key is space or tab delimited:
+
+# Column 1: target name
+# Column 2: phase center r.a. string
+# Column 3: phase center dec string
+# Column 4: source velocity [km/s]
+# Column 5: velocity width [km/s]
+
+# Note that the phase center isn't the same as the object center. This
+# is an importnat distinction mainly in the case of mosaics that cover
+# only part of the object (our linear mosaic cases..
+
+# PHANGS-ALMA examples:
+
+#circinus     14h13m10.0s   -65d20m21s    429    700
+#circinus_1   14h12m58.4s   -65d21m43s    429    700
+#circinus_2   14h13m17.1s   -65d19m24s    429    700
+#ic1954       03h31m31.4s   -51d54m17s    1062   500
+#ngc3621      11h18m16.5s   -32d48m51s    730    700
+#ngc3621_1    11h18m18.3s   -32d49m47s    730    700
+#ngc3621_2    11h18m15.0s   -32d48m06s    730    700
+
+##########################################################################
+
+ic5332	    	23h34m27.5s   -36d06m04s	701	500
+J0459-26        04h59m57.8    -26d01m20.0s  741 500
+circinus	14h13m10.0s   -65d20m21s	429	700
+ngc0247		00h47m08.6s   -20d45m37s	149	700
+ngc0253   	00h47m33.1s   -25d17m17s	243	700
+ngc0300   	00h54m53.4s   -37d41m03s	144	500
+ngc0628	 	01h36m41.7s   +15d47m01s	657	254
+ngc0685		01h47m42.8s   -52d45m43s 	1363	650
+ngc1068		02h42m40.7s   -00d00m48s	1126	750
+ngc1087	 	02h46m25.1s   -00d29m55s	1517	600
+ngc1097		02h46m19.1s   -30d16m30s	1271	1000
+ngc1300		03h19m41.1s   -19d24m41s	1577	700
+ngc1313		03h18m16.1s   -66d29m54s	456	700
+ngc1317		03h22m44.3s   -37d06m13s	1941	700
+ic1954		03h31m31.4s   -51d54m17s 	1062	500
+ngc1365		03h33m36.4s   -36d08m25s	1636	800
+ngc1385		03h37m28.8s   -24d30m01s	1499	700
+ngc1433		03h42m01.6s   -47d13m20s	1076	700
+ngc1511		03h59m37.0s   -67d38m03s 	1341	700
+ngc1512	 	04h03m54.3s   -43d20m56s	898	700
+ngc1546		04h14m36.5s   -56d03m39s	1284	1000
+ngc1559		04h17m35.8s   -62d47m01s 	1304	1000
+ngc1566		04h20m00.4s   -54d56m16s	1504	700
+ngc1637		04h41m28.2s   -02d51m29s 	717	700
+ngc1672	 	04h45m42.5s   -59d14m50s	1331	1000
+ngc1792		05h05m14.5s   -37d58m51s	1211	1000
+ngc1809		05h02m05.0s   -69d34m06s 	1300	700
+ngc2090		05h47m01.9s   -34d15m02s 	921	1000
+ngc2283		06h45m52.7s   -18d12m37s	841	700
+ngc2566		08h18m45.6s   -25d29m58s 	1637	700
+ngc2775		09h10m20.1s   +07d02m17s 	1350	1000
+ngc2835	 	09h17m52.9s   -22d21m17s	886	700
+ngc2903		09h32m10.1s   +21d30m03s	550	1000
+ngc2997		09h45m38.8s   -31d11m28s	1089	700
+ngc3059		09h50m08.1s   -73d55m20s 	1257	700
+ngc3137		10h09m07.5s   -29d03m52s 	1104	700
+ngc3239		10h25m04.9s   +17d09m49s 	753	700
+ngc3351	 	10h43m57s     +11d42m14s	778	1000
+ngc3489		11h00m18.6s   +13d54m04s	675	700
+ngc3507		11h03m25.3s   +18d08m08s 	979	700
+ngc3511		11h03m23.8s   -23d05m12s 	1109	1000
+ngc3521		11h05m48.6s   -00d02m09s	801	1000
+ngc3596		11h15m06.2s   +14d47m13s 	1193	700
+ngc3599		11h15m27.0s   +18d06m37s	839	700	
+ngc3621		11h18m16.5s   -32d48m51s	730	700
+ngc3626		11h20m03.8s   +18d21m25s 	1493	700
+ngc3627		11h20m15.0s   +12d59m30s	727	1000
+ngc4207		12h15m30.5s   +09d35m06s	596	700
+ngc4254		12h18m49.6s   +14d24m59s	2407	700
+ngc4293		12h21m12.9s   +18d22m57s 	893	700
+ngc4298		12h21m32.7s   +14d36m22s 	1135	700
+ngc4303		12h21m54.9s   +04d28m25s	1566	700
+ngc4321		12h22m54.8s   +15d49m19s	1571	700
+ngc4424		12h27m11.6s   +09d25m14s 	437	700
+ngc4457		12h28m59.0s   +03d34m14s 	882	700
+ngc4459		12h29m00.0s   +13d58m42s	1196	700
+ngc4476		12h29m59.1s   +12d20m55s	1972	700
+ngc4477		12h30m02.2s   +13d38m12s	1342	700
+ngc4496a	12h31m39.2s   +03d56m22s 	1730	700
+ngc4535		12h34m20.3s   +08d11m52s	1970	700
+ngc4536		12h34m27.1s   +02d11m17s	1808	1000
+ngc4540		12h34m50.9s   +15d33m06s 	1291	700
+ngc4548		12h35m26.4s   +14d29m47s 	486	1000
+ngc4569		12h36m49.8s   +13d09m47s 	-235	1000
+ngc4571		12h36m56.4s   +14d13m02s 	342	700
+ngc4579		12h37m43.5s   +11d49m05s 	1517	1000
+ngc4596		12h39m55.9s   +10d10m34s	1897	700
+ngc4654		12h43m56.6s   +13d07m36s 	1046	1000
+ngc4689		12h47m45.5s   +13d45m46s 	1616	700
+ngc4694		12h48m15.1s   +10d59m01s	1160	700
+ngc4731		12h51m01.1s   -06d23m35s 	1489	700
+ngc4781		12h54m23.7s   -10d32m14s 	1260	700
+ngc4826		12h56m43.6s   +21d40m59s 	408	1000
+ngc4941		13h04m13.1s   -05d33m06s 	1108	1000
+ngc4945		13h05m27.5s   -49d28m06s	563	800
+ngc4951		13h05m07.7s   -06d29m38s 	1176	1000
+ngc5042		13h15m31.0s   -23d59m03s 	1390	700
+ngc5068		13h18m54.8s   -21d02m21s	670	700
+ngc5128		13h25m27.6s   -43d01m09s	547	1000
+ngc5134		13h25m18.5s   -21d08m03s 	1758	700
+ngc5248		13h37m32.0s   +08d53m07s	1151	1000
+ngc5236		13h37m01.0s   -29d51m56s	514	500
+ngc5530		14h18m27.1s   -43d23m19s 	1193	700
+ngc5643		14h32m40.7s   -44d10m28s	1199	700
+ngc6300		17h16m59.5s   -62d49m14s 	1109	1000
+ngc6744		19h09m46.1s   -63d51m27s	841	700
+ic5273	    22h59m26.7s   -37d42m10s 	1293	650
+ngc7456		23h02m10.4s   -39d34m10s	1199	700
+ngc7496		23h09m47.3s   -43d25m41s 	1649	700
+ngc7743		23h44m21.1s   +09d56m03s	1713	700
+ngc7793		23h57m49.8s   -32d35m28s	225	700
+# Post v4 additional targets
+ngc1187		03h02m37.6s   -22d52m01s	1375	500
+ngc1808		05h07m42.3s   -37d30m46s	982	700
+ngc3673		11h25m12.8s   -26d44m12s	1933	500
+ngc4123		12h08m11.1s   +02d52m42s	1328	500
+ngc4981		13h08m48.7s   -06d46m39s	1682	500
+ngc5101		13h21m46.2s   -27d25m50s	1869	500

@@ -164,7 +164,7 @@
 # NOTE: we need to be flagging the Galactic 21-cm for the continuum subtraction!
 # exclude_freqrange flags out -80 to 80 km/s in HI
 
-line_product    hi21cm    {'line_tag':'hi21cm','channel_kms':0.4,'statwt_edge_kms':50.}
+line_product    hi21cm    {'line_tag':'hi21cm','channel_kms':5.0,'statwt_edge_kms':50.}
 line_product    hi21cm    {'fitorder':1,'combinespw':False,'lines_to_flag':['hi21cm'],'exclude_freq_ranges_ghz':[[1.42002671,1.42078479]],'flag_edge_fraction':0.1}
 
 # # Ends up being ~0.84 km/s

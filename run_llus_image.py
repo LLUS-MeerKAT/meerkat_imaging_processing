@@ -4,16 +4,17 @@
 
 import os
 import sys
+sys.path.append(os.path.expanduser("/idia/projects/llus/test/code/analysis_scripts/"))
 
 from astropy.io import fits
+import phangsPipeline
 
 # Use boolean flags to set the steps to be performed when the pipeline
 # is called. See descriptions below (but only edit here).
 
 # Locate the master key
-key_file = '/users/eros/code/meerkat_processing/llus_keys/master_key.txt'
-sys.path.append(os.path.expanduser("/users/eros/code/phangs_imaging_scripts/"))
-sys.path.append(os.path.expanduser("/users/eros/code/analysis_scripts/"))
+key_file = '/idia/projects/llus/test/code/meerkat_imaging_processing/llus_keys/llus_key.txt'
+# sys.path.append(os.path.expanduser("/idia/projects/llus/test/code/phangs_imaging_scripts/"))
 chunksize = 10
 
 
@@ -23,6 +24,8 @@ if len(sys.argv) != 4:
     raise ValueError('LLUS SLURM processing requires exactly 3 command line arguments: target, stagestring, job_array_id')
 
 target = sys.argv[-3]
+
+phangsPipeline.setup_logger(logfile=f'{target}_{os.environ['SLURM_JOB_ID']}.log')
 
 try: 
     chunk_num = int(sys.argv[-1])
@@ -44,6 +47,7 @@ if 'S' in stagestring:
     do_staging = True
     print('Adding STAGING step to this processing run')
     from phangsPipeline import handlerVis as uvh
+    from phangsPipeline.handlerImagingChunked import ImagingChunkedHandler
     this_uvh = uvh.VisHandler(key_handler=this_kh)
     this_uvh.set_targets(only=[target])
     this_uvh.set_interf_configs(only=['meerkat'])
@@ -175,6 +179,9 @@ if do_staging:
     this_uvh.loop_stage_uvdata(do_copy=False, do_contsub=False,
                                do_extract_line=False, do_extract_cont=False,
                                do_remove_staging=True, overwrite=True)
+    this_imh = ImagingChunkedHandler(target, 'meerkat', 'hi21cm', this_kh,
+                                    chunksize=chunksize)
+    print(f'Number of chunks: {this_imh.nchunks}')
 
 ##############################################################################
 # Step through imaging

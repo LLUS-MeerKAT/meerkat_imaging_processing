@@ -36,15 +36,16 @@
 #
 ##########################################################################
 
-ic5332   SCI-20210212-DU-01   all  meerkat 1  test/1670001385_sdp_l0-IC5332-corr_mst.ms
 J0459-26 MKT-25029            all  meerkat 1  test/ngc1744/1698263487-sdp-l0_2026-01-27T20-42-08_kM8.ms
-ngc3059   SCI-20210212-DU-01   all  meerkat 1 test/1675186601_sdp_l0-NGC3059-corr.ms
-ngc1511   SCI-20210212-DU-01   all  meerkat 1 test/1675446386_sdp_l0-NGC1511-corr_mst.ms
-ngc5530   SCI-20210212-DU-01   all  meerkat 1 test/1678996974_sdp_l0-NGC5530-corr_mst.ms
-ngc1809   SCI-20210212-DU-01   all  meerkat 1 test/1679158277_sdp_l0-NGC1809-corr_mst.ms
-circinus  SCI-20210212-DU-01   all  meerkat 1 test/1680214254_sdp_l0-Circinus-corr_mst.ms
-ngc1313   SCI-20210212-DU-01   all  meerkat 1 test/1688685984_sdp_l0-NGC1313-corr_mst.ms
-ngc0300   SCI-20210212-DU-01   all  meerkat 1 test/1689974301_sdp_l0-NGC300-corr_mst.ms
-ngc1097   SCI-20210212-DU-01   all  meerkat 1 test/1690412841_sdp_l0-NGC1097-corr_mst.ms
+ic5332   SCI-20210212-DU-01   all  meerkat 1  test/1670001385_sdp_l0-IC5332-corr_mst.ms
+ngc3509   SCI-20210212-DU-01   all  meerkat 1 test/1690412841_sdp_l0-NGC3509-corr_mst.ms
 ngc1300   SCI-20210212-DU-01   all  meerkat 1 test/1692828807_sdp_l0-NGC1300-corr_mst.ms
+ngc1313   SCI-20210212-DU-01   all  meerkat 1 test/1688685984_sdp_l0-NGC1313-corr_mst.ms
+ngc1511   SCI-20210212-DU-01   all  meerkat 1 test/1675446386_sdp_l0-NGC1511-corr_mst.ms
+ngc1809   SCI-20210212-DU-01   all  meerkat 1 test/1679158277_sdp_l0-NGC1809-corr_mst.ms
+ngc3059   SCI-20210212-DU-01   all  meerkat 1 test/1675186601_sdp_l0-NGC3059-corr.ms
+ngc5530   SCI-20210212-DU-01   all  meerkat 1 test/1678996974_sdp_l0-NGC5530-corr_mst.ms
+circinus  SCI-20210212-DU-01   all  meerkat 1 test/1680214254_sdp_l0-Circinus-corr_mst.ms
+ngc0300   SCI-20210212-DU-01   all  meerkat 1 test/1689974301_sdp_l0-NGC300-corr_mst.ms
 ngc4945   SCI-20251201-DP-01   all  meerkat 1 raw/SCI-20251201-DP-01/1773524837/1773524837-sdp-l0_2026-03-18T16-48-41_eRd.ms
+pgc31359  SCI-20251201-DP-01   all  meerkat 1 raw/SCI-20251201-DP-01/1774543498/1774543498-sdp-l0_2026-03-27T13-24-32_aj5.ms

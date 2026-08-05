@@ -199,7 +199,7 @@
 
 # Locations
 
-key_dir        	     	/users/eros/code/meerkat_processing/llus_keys/
+key_dir        	     	/idia/projects/llus/test/code/meerkat_imaging_processing/llus_keys/
 cleanmask_root	        /idia/projects/llus/test/pipeline/cleanmasks/
 imaging_root 	        /idia/projects/llus/test/pipeline/imaging/
 postprocess_root        /idia/projects/llus/test/pipeline/postprocess/
