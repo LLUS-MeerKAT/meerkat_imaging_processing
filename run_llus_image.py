@@ -4,7 +4,8 @@
 
 import os
 import sys
-sys.path.append(os.path.expanduser("/idia/projects/llus/test/code/analysis_scripts/"))
+# EDIT THIS IF YOU DOWNLOADED YOUR OWN analysis_script in Step 4.
+sys.path.append(os.path.expanduser("/idia/projects/llus/analysis_scripts/"))
 
 from astropy.io import fits
 import phangsPipeline
@@ -13,13 +14,11 @@ import phangsPipeline
 # is called. See descriptions below (but only edit here).
 
 # Locate the master key
+# EDIT THIS
 key_file = '/idia/projects/llus/test/code/meerkat_imaging_processing/llus_keys/llus_key.txt'
-# sys.path.append(os.path.expanduser("/idia/projects/llus/test/code/phangs_imaging_scripts/"))
-chunksize = 10
-
+chunksize = 20
 
 # Pass the target name from the cmd line
-
 if len(sys.argv) != 4:
     raise ValueError('LLUS SLURM processing requires exactly 3 command line arguments: target, stagestring, job_array_id')
 
@@ -200,7 +199,10 @@ if do_imaging:
         raise ValueError(f"Chunk number {chunk_num} is greater than the number of chunks {this_imh.nchunks}")
 
     print(f"Chunk {chunk_num} of {this_imh.nchunks}")
-    this_imh.run_imaging(do_all=True, chunk_num=chunk_num)
+    this_imh.run_imaging(do_all=True, chunk_num=chunk_num, 
+                         singlescale_mask_absolute=True,
+                         singlescale_mask_high_snr=5,
+                         singlescale_mask_low_snr=3)
 
 if do_assemble:
     this_imh = ImagingChunkedHandler(target, 'meerkat', 'hi21cm', this_kh,

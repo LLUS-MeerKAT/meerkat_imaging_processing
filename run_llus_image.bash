@@ -1,8 +1,8 @@
 #!/bin/bash
 #SBATCH --account=b234-llus-ag
 #SBATCH --time=24:00:00
-#SBATCH --job-name=llus_4945
-#SBATCH --output=llus_-%J.out
+#SBATCH --job-name=pgc31359
+#SBATCH --output=pgc31359_-%J.out
 #SBATCH --ntasks=1    # number of MPI processes
 #SBATCH --mem=32G      # memory; default unit is megabytes
 #SBATCH --cpus-per-task=8
@@ -10,8 +10,8 @@
 #SBATCH --mail-type=ALL
 
 # Edit these lines to point to correct directory and galaxy name
-export code_dir='/users/eros/code/meerkat_processing/'
-export target='ngc4945'
+export code_dir='/idia/projects/llus/test/code/meerkat_imaging_processing'
+export target='pgc31359'
 
 # Stage string 
 # S = staging

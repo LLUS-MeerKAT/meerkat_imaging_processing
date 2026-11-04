@@ -198,19 +198,24 @@
 # DELETE AFTER HERE FOR NEW PROJECT, FULL PHANGS-ALMA CASE FOLLOWS
 
 # Locations
+ms_root			        /idia/projects/llus/
 
+# Change this directory to point to where you are keeping the meerkat_imaging_processing directory
 key_dir        	     	/idia/projects/llus/test/code/meerkat_imaging_processing/llus_keys/
+
+# Change the /test/ path to your processing directory in all of these
 cleanmask_root	        /idia/projects/llus/test/pipeline/cleanmasks/
 imaging_root 	        /idia/projects/llus/test/pipeline/imaging/
 postprocess_root        /idia/projects/llus/test/pipeline/postprocess/
 derived_root            /idia/projects/llus/test/pipeline/derived/
 release_root		    /idia/projects/llus/test/pipeline/release/
-ms_root			        /idia/projects/llus/
 singledish_root		    /idia/projects/llus/test/pipeline/singledish/
+
+# No changes needed below
 
 # Data files
 
-ms_key			  llus_ms_file_key.txt
+ms_key			    llus_ms_file_key.txt
 singledish_key		singledish_key.txt
 cleanmask_key		cleanmask_key.txt
 distance_key		distance_key.txt
