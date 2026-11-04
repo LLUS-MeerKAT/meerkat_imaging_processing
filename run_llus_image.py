@@ -4,7 +4,8 @@
 
 import os
 import sys
-sys.path.append(os.path.expanduser("/idia/projects/llus/code/analysis_scripts/"))
+# EDIT THIS IF YOU DOWNLOADED YOUR OWN analysis_script in Step 4.
+sys.path.append(os.path.expanduser("/idia/projects/llus/analysis_scripts/"))
 
 from astropy.io import fits
 import phangsPipeline
@@ -13,6 +14,7 @@ import phangsPipeline
 # is called. See descriptions below (but only edit here).
 
 # Locate the master key
+# EDIT THIS
 key_file = '/idia/projects/llus/test/code/meerkat_imaging_processing/llus_keys/llus_key.txt'
 chunksize = 20
 
