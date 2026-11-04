@@ -8,26 +8,31 @@ This gives instructions for running the PHANGS imaging pipeline on the ilifu clu
 ```
 git clone git@github.com:LLUS-MeerKAT/meerkat_imaging_processing
 ```
+
 2. In the repository, edit the `llus_keys/llus_key.txt` so that the line 
 ```
 key_dir        	     	/idia/projects/llus/test/code/meerkat_imaging_processing/llus_keys/
 ```
 points to the location of where you cloned the repository.
+
 3. Clone the PHANGS imaging pipeline into your code space
 ```
 git clone git@github.com:PhangsTeam/phangs_imaging_scripts.git
 ```
+
 4. (_Optional_) Download the `analysis_utils` scripts from NRAO:
 ```
 wget ftp://ftp.cv.nrao.edu/pub/casaguides/analysis_scripts.tar
 tar xf analysis_scripts.tar
 ```
 If you download your own analysis_scripts, you will need to edit the `run_llus_image.py` file to point to the correct version.
+
 5. In the `meerkat_imaging_processing` repository, edit the `run_llus_image.py` script to point to the cloned repositories.  Specifically you will need to edit the localization lines labelled `# EDIT THIS`:
 ```
 key_file = '/idia/projects/llus/test/code/meerkat_imaging_processing/llus_keys/llus_key.txt'
 ```
 The `key_file` should point to the `llus_key.txt` file in this repository.  The `phangs_imaging_scripts` and `analysis_scripts` (_optional_) should point to the repositories that you just downloaded.
+
 6. Set up your software environment as a python virtual environment
 ```
 module load python/3.12.13
