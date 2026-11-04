@@ -4,7 +4,7 @@
 
 import os
 import sys
-sys.path.append(os.path.expanduser("/idia/projects/llus/test/code/analysis_scripts/"))
+sys.path.append(os.path.expanduser("/idia/projects/llus/code/analysis_scripts/"))
 
 from astropy.io import fits
 import phangsPipeline
@@ -14,12 +14,9 @@ import phangsPipeline
 
 # Locate the master key
 key_file = '/idia/projects/llus/test/code/meerkat_imaging_processing/llus_keys/llus_key.txt'
-# sys.path.append(os.path.expanduser("/idia/projects/llus/test/code/phangs_imaging_scripts/"))
-chunksize = 10
-
+chunksize = 20
 
 # Pass the target name from the cmd line
-
 if len(sys.argv) != 4:
     raise ValueError('LLUS SLURM processing requires exactly 3 command line arguments: target, stagestring, job_array_id')
 

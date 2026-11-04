@@ -15,8 +15,7 @@ import phangsPipeline
 # Locate the master key
 key_file = '/idia/projects/llus/test/code/meerkat_imaging_processing/phangs_keys/master_key.txt'
 # sys.path.append(os.path.expanduser("/idia/projects/llus/test/code/phangs_imaging_scripts/"))
-chunksize = 15
-
+chunksize = 20
 
 # Pass the target name from the cmd line
 
@@ -24,6 +23,7 @@ if len(sys.argv) != 4:
     raise ValueError('LLUS SLURM processing requires exactly 3 command line arguments: target, stagestring, job_array_id')
 
 target = sys.argv[-3]
+phangsPipeline.setup_logger(logfile=f'{target}_{os.environ['SLURM_JOB_ID']}.log')
 
 try: 
     chunk_num = int(sys.argv[-1])
